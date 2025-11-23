@@ -29,6 +29,11 @@ app.use(express.json({ limit: "1mb" }));
 // So I will serve the current directory as static.)
 app.use(express.static(__dirname));
 
+// Serve the main page on root
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "ai-humanizer.html"));
+});
+
 // Helpers
 function simpleReadabilityScore(text) {
     if (!text) return 0;
