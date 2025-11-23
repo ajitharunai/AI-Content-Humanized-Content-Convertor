@@ -27,12 +27,11 @@ app.use(express.json({ limit: "1mb" }));
 // I will serve static files from the CURRENT directory for simplicity unless I move them.
 // The user said "Save this as ai-humanizer.html in the same folder where styles.css already lives."
 // So I will serve the current directory as static.)
-app.use(express.static(__dirname));
+// Serve static frontend from /public
+app.use(express.static(path.join(__dirname, "public")));
 
-// Serve the main page on root
-app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "ai-humanizer.html"));
-});
+// Serve index.html on root (express.static does this, but explicit fallback is good for SPA, though this is simple)
+// app.get("/", ...) is not needed if index.html is in public root.
 
 // Helpers
 function simpleReadabilityScore(text) {
