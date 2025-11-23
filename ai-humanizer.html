@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========================================================= -->
+    <!-- Basic Document Setup -->
+    <!-- ========================================================= -->
+    <meta charset="UTF-8" />
+    <title>AI → Humanized Content Studio | Ajith Labs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========================================================= -->
+    <!-- Favicon & App Icons -->
+    <!-- ========================================================= -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <!-- Primary SEO Meta -->
+    <meta name="title" content="AI → Humanized Content Studio by Ajith Labs">
+    <meta name="description"
+        content="Turn AI-generated drafts into clearer, more human-sounding content while staying compliant with copyright and disclosure best practices.">
+    <link rel="canonical" href="https://www.arunaiajith.blog/ai-humanizer.html">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Base theme (your existing styles) -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tool-specific styles -->
+    <link rel="stylesheet" href="humanizer.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">Ajith<span>Labs</span></a>
+
+            <nav class="nav" id="nav">
+                <a href="about.html">About</a>
+                <a href="case-studies.html">Case Studies</a>
+                <a href="blog.html">Blog</a>
+                <a href="future-search.html">SEO Solutions</a>
+                <a href="product-marketing-learning-roadmap-2025.html">Product Marketing Roadmap</a>
+                <a href="tools.html">Tools</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="tools-main">
+
+        <!-- HERO -->
+        <section class="section humanizer-hero">
+            <div class="container humanizer-hero-grid">
+                <div class="humanizer-hero-copy fade-in">
+                    <p class="eyebrow">Tool • AI Drafts • Human-Ready Output</p>
+                    <h1 class="humanizer-title">AI Content → Humanized Content Convertor</h1>
+                    <p class="humanizer-subtitle">
+                        Paste your ChatGPT or Gemini draft, choose the intent, and refine it into clear,
+                        human-readable content while respecting style, SEO and copyright guidelines.
+                    </p>
+
+                    <div class="hero-highlight">
+                        <span class="pill pill-ghost">For blogs, LinkedIn, email, and product copy</span>
+                        <span class="pill pill-solid">Rule-based refinement in your browser</span>
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#app" class="btn primary">Start Humanizing Content</a>
+                        <a href="#guidelines" class="btn soft">Read Responsible Use Guidelines</a>
+                    </div>
+
+                    <div class="hero-badges">
+                        <span>No login required</span>
+                        <span>Runs fully client-side</span>
+                        <span>Built for writers & marketers</span>
+                    </div>
+                </div>
+
+                <aside class="humanizer-hero-panel card-3d fade-in">
+                    <header class="humanizer-panel-header">
+                        <span class="humanizer-badge">Live Tool Preview</span>
+                    </header>
+                    <div class="humanizer-panel-body">
+                        <p class="panel-tag">Example transformation</p>
+                        <p class="humanizer-panel-label">Input (AI style)</p>
+                        <p class="humanizer-panel-text">
+                            Our cutting-edge platform leverages next-gen AI to revolutionize how brands unlock growth.
+                        </p>
+                        <p class="humanizer-panel-label">Output (human style)</p>
+                        <p class="humanizer-panel-text humanizer-panel-text-strong">
+                            This platform helps your team find practical, repeatable ways to grow,
+                            using AI in the background without making your content sound robotic.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- APP SECTION -->
+        <section id="app" class="section section-soft">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Humanize Your Draft</h2>
+                    <p class="section-subtitle">
+                        Choose your content type, refine tone and length, then export or copy your final version.
+                    </p>
+                </div>
+
+                <div class="humanizer-grid">
+
+                    <!-- LEFT: INPUT + CONTROLS -->
+                    <div class="humanizer-column humanizer-column-main fade-in">
+                        <!-- Content type tabs -->
+                        <div class="humanizer-tabs" role="tablist">
+                            <button class="humanizer-tab active" data-content-type="blog" type="button">Blog /
+                                Article</button>
+                            <button class="humanizer-tab" data-content-type="linkedin" type="button">LinkedIn
+                                Post</button>
+                            <button class="humanizer-tab" data-content-type="email" type="button">Email /
+                                Outreach</button>
+                            <button class="humanizer-tab" data-content-type="other" type="button">Other</button>
+                        </div>
+
+                        <!-- Input card -->
+                        <div class="humanizer-card humanizer-input-card">
+                            <div class="form-row form-row-inline">
+                                <div class="form-group">
+                                    <label for="aiInput">Paste your AI-generated draft</label>
+                                    <p class="field-hint">Content from ChatGPT, Gemini, or any other AI writer.</p>
+                                </div>
+                                <div class="humanizer-meta-group">
+                                    <span id="inputCharCount" class="meta-pill">0 characters</span>
+                                    <button type="button" class="btn soft btn-xs" id="btnPaste">
+                                        Paste from clipboard
+                                    </button>
+                                </div>
+                            </div>
+
+                            <textarea id="aiInput" rows="10" placeholder="Paste your AI draft here…"></textarea>
+
+                            <div class="humanizer-controls">
+                                <div class="humanizer-control-group">
+                                    <label for="toneSelect">Target tone</label>
+                                    <select id="toneSelect">
+                                        <option value="neutral">Neutral & clear</option>
+                                        <option value="casual">More conversational</option>
+                                        <option value="formal">More formal</option>
+                                    </select>
+                                </div>
+
+                                <div class="humanizer-control-group">
+                                    <label for="lengthSelect">Length preference</label>
+                                    <select id="lengthSelect">
+                                        <option value="original">Keep similar length</option>
+                                        <option value="shorter">Shorter & tighter</option>
+                                        <option value="longer">Slightly expanded</option>
+                                    </select>
+                                </div>
+
+                                <div class="humanizer-control-group">
+                                    <label for="seoKeywords">Important words to keep (optional)</label>
+                                    <input type="text" id="seoKeywords"
+                                        placeholder="Example: semantic search, restaurant POS, AI customer support" />
+                                    <p class="field-hint">
+                                        The tool tries to preserve these phrases while simplifying the language.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="humanizer-toggle-row">
+                                <label class="toggle">
+                                    <input type="checkbox" id="toggleSimplify" checked />
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-label">Simplify complex phrases</span>
+                                </label>
+
+                                <label class="toggle">
+                                    <input type="checkbox" id="toggleDeBuzz" checked />
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-label">Reduce buzzwords and hype</span>
+                                </label>
+
+                                <label class="toggle">
+                                    <input type="checkbox" id="toggleHints" checked />
+                                    <span class="toggle-slider"></span>
+                                    <span class="toggle-label">Show rewrite hints</span>
+                                </label>
+                            </div>
+
+                            <div class="humanizer-actions">
+                                <button type="button" class="btn primary" id="btnHumanize">Humanize Content</button>
+                                <button type="button" class="btn soft" id="btnClear">Clear</button>
+                            </div>
+
+                            <p class="humanizer-note">
+                                This is a rule-based transformer running in your browser. For production-grade
+                                rewriting, you can
+                                later plug this UI into a backend (OpenAI, Gemini, etc.) while keeping the same UX.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT: OUTPUT + VARIANTS + GUIDELINES -->
+                    <div class="humanizer-column humanizer-column-side fade-in">
+
+                        <!-- Main output -->
+                        <div class="humanizer-card humanizer-output-card">
+                            <div class="form-row form-row-inline">
+                                <div class="form-group">
+                                    <label for="humanOutput">Humanized version</label>
+                                    <p class="field-hint">You can edit this output manually before copying.</p>
+                                </div>
+                                <div class="humanizer-meta-group">
+                                    <span id="outputCharCount" class="meta-pill">0 characters</span>
+                                    <button type="button" class="btn soft btn-xs" id="btnCopy">
+                                        Copy output
+                                    </button>
+                                </div>
+                            </div>
+
+                            <textarea id="humanOutput" rows="10" placeholder="Your refined content will appear here…"
+                                readonly></textarea>
+
+                            <div class="humanizer-quality-bar">
+                                <span class="quality-label">Readability estimate</span>
+                                <div class="quality-meter">
+                                    <div class="quality-fill" id="qualityFill"></div>
+                                </div>
+                                <span id="qualityScore" class="quality-score">–</span>
+                            </div>
+                        </div>
+
+                        <!-- Variant suggestions -->
+                        <div class="humanizer-card humanizer-variants-card">
+                            <div class="humanizer-variants-header">
+                                <h3>Quick Variants</h3>
+                                <p class="field-hint">
+                                    Alternate phrasings you can copy or adapt. Generated using lightweight rules, not a
+                                    full LLM.
+                                </p>
+                            </div>
+
+                            <div class="variants-grid">
+                                <div class="variant-card">
+                                    <h4>Variant A · Shorter</h4>
+                                    <p id="variantA" class="variant-text">Run the tool to see this variant.</p>
+                                    <button type="button" class="btn soft btn-xs" data-variant-target="variantA">Copy
+                                        Variant A</button>
+                                </div>
+                                <div class="variant-card">
+                                    <h4>Variant B · More conversational</h4>
+                                    <p id="variantB" class="variant-text">Run the tool to see this variant.</p>
+                                    <button type="button" class="btn soft btn-xs" data-variant-target="variantB">Copy
+                                        Variant B</button>
+                                </div>
+                                <div class="variant-card">
+                                    <h4>Variant C · Summary</h4>
+                                    <p id="variantC" class="variant-text">Run the tool to see this variant.</p>
+                                    <button type="button" class="btn soft btn-xs" data-variant-target="variantC">Copy
+                                        Variant C</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Responsible use / copyright -->
+                        <div id="guidelines" class="humanizer-card humanizer-guidelines-card">
+                            <h3>Copyright & Responsible Use</h3>
+                            <ul class="guidelines-list">
+                                <li>
+                                    <strong>1. You own your inputs and outputs.</strong>
+                                    Make sure you have the right to use any source text you paste here. Do not paste
+                                    confidential or
+                                    third-party copyrighted material without permission.
+                                </li>
+                                <li>
+                                    <strong>2. Do not misrepresent AI work as fully human.</strong>
+                                    This tool helps you edit and refine. It does not remove your responsibility to
+                                    disclose AI assistance
+                                    where required by your company, clients, or platforms.
+                                </li>
+                                <li>
+                                    <strong>3. Do not use this to bypass AI detection systems.</strong>
+                                    The purpose of this tool is to improve clarity, tone, and readability – not to trick
+                                    detection
+                                    models or reviewers.
+                                </li>
+                                <li>
+                                    <strong>4. Check facts and sources.</strong>
+                                    AI drafts can be inaccurate. Always verify claims, data, and citations before
+                                    publishing.
+                                </li>
+                                <li>
+                                    <strong>5. Maintain your voice.</strong>
+                                    Use this as a starting point and then edit manually so the final content reflects
+                                    your expertise and
+                                    personality.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT (reuse your pattern) -->
+        <section id="contact" class="section section-soft">
+            <div class="container contact-layout">
+                <div class="contact-copy fade-in">
+                    <h2 class="section-title">Need a Custom AI Content Workflow?</h2>
+                    <p class="section-subtitle">
+                        If you want this tool wired into OpenAI, Gemini, or your own API, share your use case and stack.
+                    </p>
+                    <div class="contact-badges">
+                        <span>Content Ops</span>
+                        <span>SEO Systems</span>
+                        <span>AI Product UX</span>
+                    </div>
+                </div>
+
+                <form class="contact-form card-3d fade-in">
+                    <div class="form-row">
+                        <label>Name</label>
+                        <input type="text" required placeholder="Your full name">
+                    </div>
+                    <div class="form-row">
+                        <label>Work Email</label>
+                        <input type="email" required placeholder="you@company.com">
+                    </div>
+                    <div class="form-row">
+                        <label>Company</label>
+                        <input type="text" placeholder="Company or product name">
+                    </div>
+                    <div class="form-row">
+                        <label>What do you want to build?</label>
+                        <textarea rows="3"
+                            placeholder="Example: plug into OpenAI, add multi-language support, build a Chrome extension…"></textarea>
+                    </div>
+                    <button class="btn primary full-width" type="submit">Send Message</button>
+                    <p class="contact-footnote">
+                        Prefer LinkedIn?
+                        <a href="https://www.linkedin.com/in/ajitharunai" target="_blank"
+                            rel="noopener">linkedin.com/in/ajitharunai</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© <span id="year"></span> Ajith. All rights reserved.</p>
+            <p>AI Research Engineer · Architect · SaaS Growth Partner</p>
+            <p><a href="gtm-playbooks.html">GTM Playbooks</a></p>
+        </div>
+    </footer>
+
+    <script src="humanizer.js"></script>
+</body>
+
+</html>

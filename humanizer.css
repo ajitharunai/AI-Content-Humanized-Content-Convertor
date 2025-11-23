@@ -1,0 +1,422 @@
+/* =========================================
+   AI → Humanized Content Studio
+   Extends your existing theme
+   ========================================= */
+
+/* HERO */
+
+.humanizer-hero {
+    padding-top: 110px;
+}
+
+.humanizer-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.1fr);
+    gap: 40px;
+    align-items: center;
+}
+
+.humanizer-title {
+    margin: 0 0 14px;
+    font-size: clamp(2.4rem, 3vw, 3.1rem);
+    letter-spacing: -0.06em;
+}
+
+.humanizer-subtitle {
+    margin: 0 0 20px;
+    font-size: 1.02rem;
+    color: var(--text-muted);
+}
+
+/* Hero panel */
+
+.humanizer-hero-panel {
+    background: var(--card);
+    border-radius: 24px;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+}
+
+.humanizer-panel-header {
+    padding: 10px 16px;
+    background: linear-gradient(to right,
+            rgba(15, 23, 42, 0.12),
+            rgba(15, 23, 42, 0));
+}
+
+.humanizer-badge {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(15, 23, 42, 0.7);
+}
+
+.humanizer-panel-body {
+    padding: 18px 18px 20px;
+}
+
+.humanizer-panel-label {
+    margin: 10px 0 2px;
+    font-size: 0.82rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(15, 23, 42, 0.6);
+}
+
+.humanizer-panel-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.humanizer-panel-text-strong {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* MAIN GRID */
+
+.humanizer-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+    gap: 26px;
+    align-items: flex-start;
+}
+
+.humanizer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Tabs */
+
+.humanizer-tabs {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.14);
+}
+
+.humanizer-tab {
+    border: none;
+    background: transparent;
+    padding: 6px 12px;
+    border-radius: var(--radius-pill);
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: rgba(15, 23, 42, 0.7);
+    cursor: pointer;
+    transition: background var(--transition-fast), color var(--transition-fast),
+        transform var(--transition-fast);
+}
+
+.humanizer-tab.active {
+    background: radial-gradient(circle at 0 0, #bbf7d0 0, var(--accent) 36%, #22d3ee 100%);
+    color: var(--accent-dark);
+    transform: translateY(-1px);
+}
+
+/* Cards */
+
+.humanizer-card {
+    background: var(--card);
+    border-radius: 24px;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+    padding: 18px 20px 20px;
+}
+
+.humanizer-input-card textarea,
+.humanizer-output-card textarea {
+    width: 100%;
+    resize: vertical;
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    padding: 10px 12px;
+    font-family: inherit;
+    font-size: 0.92rem;
+    background: rgba(255, 255, 255, 0.98);
+}
+
+.humanizer-input-card textarea:focus,
+.humanizer-output-card textarea:focus {
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.4);
+    outline: none;
+}
+
+/* Inline form rows / hints */
+
+.form-row-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.form-group {
+    display: grid;
+    gap: 4px;
+}
+
+.field-hint {
+    margin: 0;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.meta-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    border-radius: var(--radius-pill);
+    font-size: 0.8rem;
+    background: rgba(255, 255, 255, 0.96);
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    color: rgba(15, 23, 42, 0.8);
+}
+
+.humanizer-meta-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Small buttons */
+
+.btn-xs {
+    height: 32px;
+    padding: 0 14px;
+    font-size: 0.8rem;
+}
+
+/* Controls */
+
+.humanizer-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+}
+
+.humanizer-control-group {
+    display: grid;
+    gap: 6px;
+}
+
+.humanizer-control-group select,
+.humanizer-control-group input[type="text"] {
+    border-radius: 14px;
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    padding: 8px 10px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    background: rgba(255, 255, 255, 0.98);
+}
+
+/* Toggles */
+
+.humanizer-toggle-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 14px 0 10px;
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 0.86rem;
+    color: rgba(15, 23, 42, 0.8);
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle-slider {
+    width: 32px;
+    height: 18px;
+    border-radius: 999px;
+    background: rgba(148, 163, 184, 0.7);
+    position: relative;
+    transition: background var(--transition-fast);
+}
+
+.toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 999px;
+    background: #ffffff;
+    top: 2px;
+    left: 2px;
+    transition: transform var(--transition-fast);
+}
+
+.toggle input:checked+.toggle-slider {
+    background: var(--accent-blue);
+}
+
+.toggle input:checked+.toggle-slider::before {
+    transform: translateX(14px);
+}
+
+.toggle-label {
+    white-space: nowrap;
+}
+
+/* Actions */
+
+.humanizer-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.humanizer-note {
+    margin: 10px 0 0;
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+/* Output quality meter */
+
+.humanizer-quality-bar {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.84rem;
+}
+
+.quality-label {
+    color: rgba(15, 23, 42, 0.8);
+}
+
+.quality-meter {
+    flex: 1;
+    height: 8px;
+    border-radius: 999px;
+    background: rgba(226, 232, 240, 0.9);
+    overflow: hidden;
+}
+
+.quality-fill {
+    height: 100%;
+    width: 0%;
+    border-radius: 999px;
+    background: linear-gradient(to right, #f97316, #22c55e);
+    transition: width 220ms ease-out;
+}
+
+.quality-score {
+    font-weight: 600;
+    min-width: 40px;
+    text-align: right;
+}
+
+/* Variants */
+
+.humanizer-variants-header h3 {
+    margin: 0 0 4px;
+    font-size: 1rem;
+}
+
+.variants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.variant-card {
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    background: rgba(255, 255, 255, 0.98);
+    padding: 10px 12px 12px;
+    display: grid;
+    gap: 8px;
+}
+
+.variant-card h4 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.variant-text {
+    margin: 0;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+}
+
+/* Guidelines */
+
+.humanizer-guidelines-card h3 {
+    margin: 0 0 8px;
+}
+
+.guidelines-list {
+    margin: 0;
+    padding-left: 18px;
+    display: grid;
+    gap: 8px;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+    .humanizer-hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .humanizer-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .humanizer-hero {
+        padding-top: 96px;
+    }
+
+    .form-row-inline {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .humanizer-meta-group {
+        align-self: stretch;
+        justify-content: space-between;
+    }
+
+    .humanizer-actions {
+        flex-direction: column;
+    }
+
+    .humanizer-actions .btn {
+        width: 100%;
+    }
+
+    .humanizer-toggle-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-label {
+        white-space: normal;
+    }
+}

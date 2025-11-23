@@ -1,0 +1,20 @@
+{
+  "name": "ai-humanizer-tool",
+  "version": "1.0.0",
+  "description": "AI → Humanized Content Studio (Ajith Labs) with Node/Express backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.0",
+    "openai": "^4.0.0",
+    "@google/generative-ai": "^0.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
